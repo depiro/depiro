@@ -25,4 +25,7 @@ npm install
 npm run build
 ```
 
+The build command uses the Tailwind CLI installed in `node_modules` and
+automatically creates the `dist` folder if needed.
+
 The resulting `dist/style.css` can be linked from `src/index.html`.
