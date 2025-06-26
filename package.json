@@ -1,0 +1,20 @@
+{
+  "name": "depiro",
+  "version": "1.0.0",
+  "description": "<!-- **depiro/depiro** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.27"
+  }
+}
+
