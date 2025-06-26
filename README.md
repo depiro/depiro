@@ -14,3 +14,15 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+## Tailwind Setup
+
+This repository includes a minimal Tailwind CSS configuration.
+To build the stylesheet run:
+
+```bash
+npm install
+npm run build
+```
+
+The resulting `dist/style.css` can be linked from `src/index.html`.
