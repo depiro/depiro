@@ -1,0 +1,23 @@
+{
+  "name": "depiro",
+  "version": "1.0.0",
+  "description": "Portfolio project with Sass and Tailwind CSS",
+  "scripts": {
+    "build:sass": "sass src/styles/custom.scss src/styles/custom.css --style=compressed",
+    "build:css": "postcss src/styles/main.css -o dist/styles/main.css",
+    "build": "npm run build:sass && npm run build:css",
+    "dev:sass": "sass src/styles/custom.scss src/styles/custom.css --watch",
+    "dev:css": "postcss src/styles/main.css -o dist/styles/main.css --watch",
+    "dev": "npm run dev:sass & npm run dev:css"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.69.0"
+  }
+}
