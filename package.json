@@ -8,7 +8,8 @@
     "build": "npm run build:sass && npm run build:css",
     "dev:sass": "sass src/styles/custom.scss src/styles/custom.css --watch",
     "dev:css": "postcss src/styles/main.css -o dist/styles/main.css --watch",
-    "dev": "npm run dev:sass & npm run dev:css"
+    "dev": "npm run dev:sass & npm run dev:css",
+    "serve": "live-server --port=3000 --open=/index.html"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.11",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "live-server": "^1.2.2",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "sass": "^1.69.0"

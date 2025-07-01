@@ -1,64 +1,106 @@
+@import "typo";
+@import "palette";
+
+// Custom variables
 :root {
-  --font-body: 'Noto Sans', sans-serif;
-  --color-text: #000;
-  --color-bg: #fff;
-  --max-width: 720px;
-}
+    --color-text:var(--color-flexoki-light-tx);
+    --color-bg: var(--color-flexoki-light-bg-2);
+    --max-width: 720px;
+}   
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+// Base styles
 body {
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-text);
-  background: var(--color-bg);
-  padding: 2rem 1.5rem;
-  max-width: var(--max-width);
-  margin: 0 auto;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-bg); 
+    padding: 2rem 1.5rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
-h1, h2, h3 {
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2.25rem;
-}
-h3 {
-  font-size: 1.5rem;
-}
-p {
-  margin-bottom: 1.5rem;
-}
+// Links
 a {
-  color: inherit;
-  text-decoration: underline;
-  transition: opacity 0.2s;
-  &:hover {
-    opacity: 0.7;
-  }
+    color: inherit;
+    text-decoration: underline;
+    transition: opacity 0.2s;
+  
+    &:hover {
+        color: var(--color-flexoki-cyan-600);
+        text-decoration: underline;
+    }
 }
+
+// Navigation
 nav {
-  margin-bottom: 2rem;
   a {
     margin-right: 1rem;
+    
+    &:last-of-type {
+        margin-right: 0;
+      }
   }
 }
-section {
-  margin-bottom: 3rem;
+
+.contact-home {
+    color: var(--color-flexoki-cyan-600);
 }
+
+// Custom utility classes
 .text-gradient {
   background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-} 
+  border:1px solid tomato;
+}
+/* 
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  
+  &--primary {
+    background-color: #2563eb;
+    color: white;
+    
+    &:hover {
+      background-color: #1d4ed8;
+    }
+  }
+  
+  &--secondary {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    
+    &:hover {
+      background-color: #d1d5db;
+    }
+  }
+} */
+
+// Grid Layout
+.site-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* min-height: 96vh; */
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.site-layout > header {
+  grid-area: header;
+}
+
+.site-layout > main {
+  grid-area: main;
+}
+
+.site-layout > footer {
+  grid-area: footer;
+}

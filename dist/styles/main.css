@@ -1,62 +1,242 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
-:root {
-  --font-body: "Noto Sans", sans-serif;
-  --color-text: #000;
-  --color-bg: #fff;
-  --max-width: 720px;
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
+@layer properties;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.flex {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.h-dvh {
+  height: 100dvh;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.self-center {
+  align-self: center;
+}
+.text-center {
+  text-align: center;
+}
+.font-\[700\] {
+  --tw-font-weight: 700;
+  font-weight: 700;
+}
+.no-underline {
+  text-decoration-line: none;
+}
+:root {
+  --font-sans: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+}
+.figtree {
+  font-family: var(--font-sans);
+}
+.fira {
+  font-family: var(--font-mono);
+}
+.text-xs {
+  font-size: .64rem;
+  line-height: 1rem;
+}
+.text-sm {
+  font-size: .8rem;
+  line-height: 1.25rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-lg {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-xl {
+  font-size: 1.563rem;
+  line-height: 2rem;
+}
+.text-2xl {
+  font-size: 1.953rem;
+  line-height: 2.25rem;
+}
+.text-3xl {
+  font-size: 2.441rem;
+  line-height: 2.5rem;
+}
+.text-4xl {
+  font-size: 3.052rem;
+  line-height: 2.75rem;
+}
+.text-5xl {
+  font-size: 3.815rem;
+  line-height: 3rem;
 }
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 1.65;
+  letter-spacing: .005em;
+  -webkit-font-smoothing: antialiased;
+}
+.figtree-primary {
+  font-family: "Figtree",sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.fira-code-secondary {
+  font-family: "Fira Code",monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+h1 {
+  font-size: clamp(2.441rem,5vw,3.815rem);
+  line-height: 3rem;
+  letter-spacing: -0.02em;
+}
+h2 {
+  font-size: clamp(1.953rem,4vw,3.052rem);
+  line-height: 2.75rem;
+  letter-spacing: -0.015em;
+}
+h3 {
+  font-size: clamp(1.563rem,3vw,2.441rem);
+  letter-spacing: -0.01em;
+  line-height: 2.5rem;
+}
+h4 {
+  font-size: clamp(1.25rem,2vw,1.953rem);
+  line-height: 2.25rem;
+}
+p {
+  font-size: clamp(1rem,1.5vw,1.25rem);
+  line-height: 1.75rem;
+}
+small {
+  font-size: clamp(.8rem,1vw,1rem);
+  line-height: 1.5rem;
+}
+.caption,.note {
+  font-size: clamp(.64rem,.8vw,.8rem);
+  line-height: 1.25rem;
+}
+:root, :host {
+  --color-flexoki-black: #100F0F;
+  --color-flexoki-paper: #FFFCF0;
+  --color-flexoki-base-50: #F2F0E5;
+  --color-flexoki-base-100: #E6E4D9;
+  --color-flexoki-base-150: #DAD8CE;
+  --color-flexoki-base-200: #CECDC3;
+  --color-flexoki-base-300: #B7B5AC;
+  --color-flexoki-base-500: #878580;
+  --color-flexoki-base-600: #6F6E69;
+  --color-flexoki-base-700: #575653;
+  --color-flexoki-base-800: #403E3C;
+  --color-flexoki-base-850: #343331;
+  --color-flexoki-base-900: #282726;
+  --color-flexoki-base-950: #1C1B1A;
+  --color-flexoki-red-400: #D14D41;
+  --color-flexoki-red-600: #AF3029;
+  --color-flexoki-orange-400: #DA702C;
+  --color-flexoki-orange-600: #BC5215;
+  --color-flexoki-yellow-400: #D0A215;
+  --color-flexoki-yellow-600: #AD8301;
+  --color-flexoki-green-400: #879A39;
+  --color-flexoki-green-600: #66800B;
+  --color-flexoki-cyan-400: #3AA99F;
+  --color-flexoki-cyan-600: #24837B;
+  --color-flexoki-blue-400: #4385BE;
+  --color-flexoki-blue-600: #205EA6;
+  --color-flexoki-purple-400: #8B7EC8;
+  --color-flexoki-purple-600: #5E409D;
+  --color-flexoki-magenta-400: #CE5D97;
+  --color-flexoki-magenta-600: #A02F6F;
+  --color-flexoki-light-bg-2: var(--color-flexoki-base-50);
+  --color-flexoki-light-tx: var(--color-flexoki-black);
+}
+:root {
+  --color-text: var(--color-flexoki-light-tx);
+  --color-bg: var(--color-flexoki-light-bg-2);
+  --max-width: 720px;
+}
+body {
+  font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-text);
-  background: var(--color-bg);
+  background-color: var(--color-bg);
   padding: 2rem 1.5rem;
   max-width: var(--max-width);
   margin: 0 auto;
 }
-h1, h2, h3 {
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2.25rem;
-}
-h3 {
-  font-size: 1.5rem;
-}
-p {
-  margin-bottom: 1.5rem;
-}
 a {
   color: inherit;
   text-decoration: underline;
-  transition: opacity 0.2s;
+  transition: opacity .2s;
 }
 a:hover {
-  opacity: 0.7;
-}
-nav {
-  margin-bottom: 2rem;
+  color: var(--color-flexoki-cyan-600);
+  text-decoration: underline;
 }
 nav a {
   margin-right: 1rem;
 }
-section {
-  margin-bottom: 3rem;
+nav a:last-of-type {
+  margin-right: 0;
+}
+.contact-home {
+  color: var(--color-flexoki-cyan-600);
 }
 .text-gradient {
   background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: rgba(0,0,0,0);
   background-clip: text;
+  border: 1px solid tomato;
+}
+.site-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+}
+.site-layout>header {
+  grid-area: header;
+}
+.site-layout>main {
+  grid-area: main;
+}
+.site-layout>footer {
+  grid-area: footer;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-font-weight: initial;
+    }
+  }
 } 
+
 /*# sourceMappingURL=main.css.map */
