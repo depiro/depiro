@@ -757,6 +757,15 @@ p, ul, ol {
   color: var(--color-flexoki-light-tx-1);
   margin-bottom: 1.8rem;
 }
+p a {
+  color: var(--color-flexoki-cyan-600);
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+p a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
