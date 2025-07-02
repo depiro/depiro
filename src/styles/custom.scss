@@ -24,7 +24,6 @@ body {
 // Links
 a {
     color: inherit;
-    text-decoration: underline;
     transition: opacity 0.2s;
   
     &:hover {
@@ -50,7 +49,7 @@ nav {
 
 // Custom utility classes
 .text-gradient {
-  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(45deg, var(--color-flexoki-cyan-600), #ff4f4f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -84,8 +83,15 @@ header, footer {
 }
 
 .disclaimer {
-  color: var(--color-muted-text);
+  color: var(--color-flexoki-cyan-700);
 }
 h2 {
-  margin-bottom: 2.8rem;
+  /* margin-bottom: 2.8rem; border:1px solid green; */
+}
+h3, h4 {
+  /* margin-bottom: .5rem; */
+}
+p, ul, ol {
+  color: var(--color-flexoki-light-tx-1);
+  margin-bottom: 1.8rem;
 }
