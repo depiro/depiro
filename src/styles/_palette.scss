@@ -1,5 +1,5 @@
 /* Specify new namespaced colors. */
-@theme {
+:root {
   --color-flexoki-black:       #100F0F;
   --color-flexoki-paper:       #FFFCF0;
   --color-flexoki-base-50:     #F2F0E5;
@@ -122,7 +122,7 @@
 }
 
 /* Define some semantic aliases. */
-@theme inline {
+:root {
   --color-flexoki-light-bg:    var(--color-flexoki-paper);
   --color-flexoki-light-bg-2:  var(--color-flexoki-base-50);
   --color-flexoki-light-tx:    var(--color-flexoki-black);

@@ -1,3 +1,4 @@
+@use 'sass:map';
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Code:wght@300..700&display=swap');
 
 
@@ -28,8 +29,8 @@ $text-scale: (
 
 @each $name, $values in $text-scale {
   .text-#{$name} {
-    font-size: map-get($values, size);
-    line-height: map-get($values, line);
+    font-size: map.get($values, size);
+    line-height: map.get($values, line);
   }
 }
 

@@ -1,5 +1,5 @@
-@import "typo";
-@import "palette";
+@use "typo";
+@use "palette";
 
 // Custom variables
 :root {
@@ -15,7 +15,6 @@ body {
     line-height: 1.5;
     color: var(--color-text);
     background-color: var(--color-bg); 
-    padding: 2rem 1.5rem;
     max-width: var(--max-width);
     margin: 0 auto;
 }
@@ -53,54 +52,31 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  border:1px solid tomato;
 }
-/* 
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  transition: all 0.2s;
-  
-  &--primary {
-    background-color: #2563eb;
-    color: white;
-    
-    &:hover {
-      background-color: #1d4ed8;
-    }
-  }
-  
-  &--secondary {
-    background-color: #e5e7eb;
-    color: #1f2937;
-    
-    &:hover {
-      background-color: #d1d5db;
-    }
-  }
-} */
 
 // Grid Layout
 .site-layout {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  /* min-height: 96vh; */
   grid-template-areas:
     "header"
     "main"
     "footer";
 }
 
-.site-layout > header {
-  grid-area: header;
-}
+.site-layout {
+  > header {
+    grid-area: header;
+  }
 
-.site-layout > main {
-  grid-area: main;
-}
+  > main {
+      grid-area: main;
+    }
 
-.site-layout > footer {
-  grid-area: footer;
+  > footer {
+    grid-area: footer;
+  }
+}
+header, footer {
+  padding: 1rem 0;
 }
