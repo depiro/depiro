@@ -6,6 +6,7 @@
     --color-text:var(--color-flexoki-light-tx);
     --color-bg: var(--color-flexoki-light-bg-2);
     --max-width: 720px;
+    --color-muted-text:var(--color-flexoki-cyan-600);
 }   
 
 // Base styles
@@ -79,4 +80,8 @@ nav {
 }
 header, footer {
   padding: 1rem 0;
+}
+
+.disclaimer {
+  color: var(--color-muted-text);
 }

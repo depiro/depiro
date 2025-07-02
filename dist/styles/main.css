@@ -1,5 +1,11 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
 @layer properties;
+.\@container {
+  container-type: inline-size;
+}
+.pointer-events-none {
+  pointer-events: none;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -11,14 +17,54 @@
   white-space: nowrap;
   border-width: 0;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.inset-px {
+  inset: 1px;
+}
+.mx-auto {
+  margin-inline: auto;
+}
+.-mb-px {
+  margin-bottom: -1px;
+}
 .flex {
   display: flex;
+}
+.grid {
+  display: grid;
 }
 .hidden {
   display: none;
 }
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+.h-\[min\(152px\,40cqw\)\] {
+  height: min(152px, 40cqw);
+}
 .h-dvh {
   height: 100dvh;
+}
+.h-full {
+  height: 100%;
+}
+.w-full {
+  width: 100%;
+}
+.flex-1 {
+  flex: 1;
+}
+.grow {
+  flex-grow: 1;
+}
+.flex-col {
+  flex-direction: column;
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -35,6 +81,40 @@
 .self-center {
   align-self: center;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
+.rounded-\[calc\(var\(--radius-lg\)\+1px\)\] {
+  border-radius: calc(var(--radius-lg) + 1px);
+}
+.rounded-t-\[12cqw\] {
+  border-top-left-radius: 12cqw;
+  border-top-right-radius: 12cqw;
+}
+.border-x-\[3cqw\] {
+  border-inline-style: var(--tw-border-style);
+  border-inline-width: 3cqw;
+}
+.border-t-\[3cqw\] {
+  border-top-style: var(--tw-border-style);
+  border-top-width: 3cqw;
+}
+.border-r {
+  border-right-style: var(--tw-border-style);
+  border-right-width: 1px;
+}
+.border-b {
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
 .text-center {
   text-align: center;
 }
@@ -42,8 +122,15 @@
   --tw-font-weight: 700;
   font-weight: 700;
 }
+.text-balance {
+  text-wrap: balance;
+}
 .no-underline {
   text-decoration-line: none;
+}
+.outline {
+  outline-style: var(--tw-outline-style);
+  outline-width: 1px;
 }
 @layer base;
 :root {
@@ -315,6 +402,7 @@ small {
   --color-text: var(--color-flexoki-light-tx);
   --color-bg: var(--color-flexoki-light-bg-2);
   --max-width: 720px;
+  --color-muted-text: var(--color-flexoki-cyan-600);
 }
 body {
   font-family: var(--font-sans);
@@ -366,14 +454,29 @@ nav a:last-of-type {
 header,footer {
   padding: 1rem 0;
 }
+.disclaimer {
+  color: var(--color-muted-text);
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 } 
