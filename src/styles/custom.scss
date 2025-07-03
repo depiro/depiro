@@ -49,13 +49,13 @@ body {
     /* background-image: linear-gradient(45deg, var(--color-flexoki-cyan-500) 20%, var(--color-text) 90%); */
     border: 2px solid var(--color-flexoki-cyan-500);
     color: var(--color-flexoki-cyan-500);
-
 }
 
  .contact-home:hover {
-  background-size: 230% auto;
+  background-size: 0  0;
    /* background-image: linear-gradient(45deg, var(--color-flexoki-cyan-500) 20%, var(--color-flexoki-cyan-900) 90%); */
-   color: var(--color-bg); 
+   color: var(--color-flexoki-cyan-800);
+   border: 2px solid var(--color-flexoki-cyan-800);
    text-decoration: none;
  }
 

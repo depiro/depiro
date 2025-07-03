@@ -198,6 +198,9 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
+  .mr-1 {
+    margin-right: calc(var(--spacing) * 1);
+  }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
@@ -218,6 +221,9 @@
   }
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
+  }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
   }
   .block {
     display: block;
@@ -810,8 +816,9 @@ body {
   color: var(--color-flexoki-cyan-500);
 }
 .contact-home:hover {
-  background-size: 230% auto;
-  color: var(--color-bg);
+  background-size: 0 0;
+  color: var(--color-flexoki-cyan-800);
+  border: 2px solid var(--color-flexoki-cyan-800);
   text-decoration: none;
 }
 .text-gradient {
