@@ -172,3 +172,22 @@
   --color-flexoki-dark-pu-2:   var(--color-flexoki-purple-600);
   --color-flexoki-dark-ma-2:   var(--color-flexoki-magenta-600);
 }
+
+
+
+:root {
+  --color-1: rgb(100% 98.824% 94.118%);
+  --color-2: color(display-p3 0.092 0.106 0.316);
+}
+
+/* Normal theme */
+.combo-1 {
+  color: var(--color-1);
+  background-color: var(--color-2);
+}
+
+/* Inverse theme */
+.combo-2 {
+  color: var(--color-2);
+  background-color: var(--color-1);
+}

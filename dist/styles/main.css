@@ -695,8 +695,72 @@ small {
   --color-flexoki-dark-ma-2: var(--color-flexoki-magenta-600);
 }
 :root {
+  --color-1: rgb(100% 98.824% 94.118%);
+  --color-2: color(display-p3 0.092 0.106 0.316);
+}
+.combo-1 {
+  color: var(--color-1);
+  background-color: var(--color-2);
+}
+.combo-2 {
+  color: var(--color-2);
+  background-color: var(--color-1);
+}
+a {
+  color: var(--color-flexoki-cyan-700);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  transition: color 0.25s ease-in-out, background-size 0.25s ease-out, outline-offset 0.2s ease-out;
+}
+a:hover, a:active {
+  color: var(--color-flexoki-cyan-600);
+  background-size: 100% 1px;
+}
+a:focus {
+  outline: 4px solid var(--color-flexoki-cyan-800);
+  outline-offset: 4px;
+  background-size: 100% 1px;
+}
+@supports selector(:focus-visible) {
+  a:focus {
+    outline: none;
+  }
+  a:focus-visible {
+    outline: 4px solid var(--color-flexoki-cyan-800);
+    outline-offset: 4px;
+    background-size: 100% 1px;
+  }
+}
+p a {
+  color: var(--color-flexoki-cyan-700);
+  font-weight: 500;
+}
+nav a {
+  margin-right: 1rem;
+  padding-block: 0.25rem;
+  font-weight: 600;
+}
+nav a[aria-current=page] {
+  color: var(--color-flexoki-cyan-600);
+  cursor: default;
+  background-size: 100% 2px;
+}
+nav a:last-of-type {
+  margin-right: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  a {
+    transition: none;
+    background-image: none;
+  }
+}
+:root {
   --color-text: var(--color-flexoki-light-tx);
-  --color-bg: var(--color-flexoki-light-bg-2);
+  --color-bg: var(--color-flexoki-light-bg);
   --max-width: 720px;
   --color-muted-text: var(--color-flexoki-cyan-600);
 }
@@ -710,25 +774,11 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
-a {
-  color: inherit;
-  transition: opacity 0.2s;
-}
-a:hover {
-  color: var(--color-flexoki-cyan-600);
-  text-decoration: underline;
-}
-nav a {
-  margin-right: 1rem;
-}
-nav a:last-of-type {
-  margin-right: 0;
-}
 .contact-home {
   color: var(--color-flexoki-cyan-600);
 }
 .text-gradient {
-  background: linear-gradient(45deg, var(--color-flexoki-cyan-600), #ff4f4f 100%);
+  background: linear-gradient(45deg, var(--color-flexoki-cyan-400) 10%, var(--color-flexoki-cyan-700) 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -757,14 +807,13 @@ p, ul, ol {
   color: var(--color-flexoki-light-tx-1);
   margin-bottom: 1.8rem;
 }
-p a {
-  color: var(--color-flexoki-cyan-600);
-  text-decoration: underline;
-  transition: opacity 0.2s;
+ul {
+  list-style: disc;
+  padding-left: 1rem;
+  list-style-position: outside;
 }
-p a:hover {
-  color: inherit;
-  text-decoration: underline;
+ul li {
+  margin-bottom: 1.2rem;
 }
 @property --tw-space-y-reverse {
   syntax: "*";

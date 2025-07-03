@@ -1,10 +1,15 @@
 @use "typo";
 @use "palette";
+@use "links";
 
 // Custom variables
 :root {
+    /* --color-1: rgb(100% 98.824% 94.118%);
+    --color-2: color(display-p3 0.092 0.106 0.316);
+    --color-text: var(--color-2);
+    --color-bg: var(--color-1);   */
     --color-text:var(--color-flexoki-light-tx);
-    --color-bg: var(--color-flexoki-light-bg-2);
+    --color-bg: var(--color-flexoki-light-bg);
     --max-width: 720px;
     --color-muted-text:var(--color-flexoki-cyan-600);
 }   
@@ -21,27 +26,6 @@ body {
     padding: 0 1rem;
 }
 
-// Links
-a {
-    color: inherit;
-    transition: opacity 0.2s;
-  
-    &:hover {
-        color: var(--color-flexoki-cyan-600);
-        text-decoration: underline;
-    }
-}
-
-// Navigation
-nav {
-  a {
-    margin-right: 1rem;
-    
-    &:last-of-type {
-        margin-right: 0;
-      }
-  }
-}
 
 .contact-home {
     color: var(--color-flexoki-cyan-600);
@@ -49,7 +33,10 @@ nav {
 
 // Custom utility classes
 .text-gradient {
-  background: linear-gradient(45deg, var(--color-flexoki-cyan-600), #ff4f4f 100%);
+  /* background: linear-gradient(45deg, var(--color-flexoki-cyan-500), #ff4f4f 100%); */
+  /* background: linear-gradient(45deg, #0ea3a8 10%, #140b5c 90%); */
+  background: linear-gradient(45deg, var(--color-flexoki-cyan-400) 10%, var(--color-flexoki-cyan-700) 90%);
+  /* background: linear-gradient(45deg, rgb(21, 31, 177) 10%, #680791 90%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -85,27 +72,18 @@ header, footer {
 .disclaimer {
   color: var(--color-flexoki-cyan-700);
 }
-h2 {
-  /* margin-bottom: 2.8rem; border:1px solid green; */
-}
-h3, h4 {
-  /* margin-bottom: .5rem; */
-}
+
 p, ul, ol {
   color: var(--color-flexoki-light-tx-1);
   margin-bottom: 1.8rem;
 }
 
-// Links
-p {
-    a {
-    color: var(--color-flexoki-cyan-600);
-    text-decoration: underline;
-    transition: opacity 0.2s;
+ul {
+  list-style: disc;
+  padding-left: 1rem;
+  list-style-position: outside;
 
-    &:hover {
-        color: inherit;
-        text-decoration: underline;
-    }
+  li {
+    margin-bottom: 1.2rem;
   }
 }

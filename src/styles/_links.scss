@@ -1,0 +1,85 @@
+// --------------------
+// Link & Nav styles
+// --------------------
+
+// Tokens
+$link-color: var(--color-flexoki-cyan-700);
+$link-hover: var(--color-flexoki-cyan-600);
+$link-focus-outline: var(--color-flexoki-cyan-800);
+
+// 1️⃣  Reglas globales (a todos los <a>)
+a {
+  // Color inicial + subrayado accesible
+  color: $link-color;
+  /* text-decoration: underline; */ // Si prefieres mantenerlo, descomenta
+  text-decoration-thickness: 1px;
+  text-underline-offset: .15em;
+
+  // Underline animado (0 → 100 %)
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+
+  // Transiciones (🎯 AGREGADO: ‘color’ con duración y curva dedicadas)
+  transition:
+      color .25s ease-in-out,       // ⬅️ ahora tenemos animación de color
+      background-size .25s ease-out,
+      outline-offset .2s ease-out;
+
+  // Hover / active
+  &:hover,
+  &:active {
+    color: $link-hover;
+    background-size: 100% 1px;
+  }
+
+  // --------------------
+  // Fix universal focus ring
+  // --------------------
+  &:focus {
+    outline: 4px solid $link-focus-outline;
+    outline-offset: 4px;
+    background-size: 100% 1px;
+  }
+
+  @supports selector(:focus-visible) {
+    &:focus { outline: none; }
+    &:focus-visible {
+      outline: 4px solid $link-focus-outline;
+      outline-offset: 4px;
+      background-size: 100% 1px;
+    }
+  }
+}
+
+// 2️⃣ Enlaces dentro de párrafos
+p a {
+  color: $link-color;
+  font-weight: 500;
+}
+
+// 3️⃣ Navegación principal
+nav {
+  a {
+    margin-right: 1rem;
+    padding-block: .25rem;
+    font-weight: 600;
+
+    &[aria-current="page"] {
+      color: $link-hover;
+      cursor: default;
+      background-size: 100% 2px;
+    }
+
+    &:last-of-type { margin-right: 0; }
+  }
+}
+
+// 4️⃣ Reduce Motion
+@media (prefers-reduced-motion: reduce) {
+  a {
+    transition: none;
+    background-image: none;
+  }
+}
