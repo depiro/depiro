@@ -344,6 +344,9 @@
   .no-underline {
     text-decoration-line: none;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -816,6 +819,34 @@ ul {
 ul li {
   margin-bottom: 1.2rem;
 }
+@view-transition {
+  navigation: auto;
+}
+::view-transition-group(*) {
+  animation-duration: 0.1s;
+}
+::view-transition-old(root) {
+  animation: slide-out-to-left 0.8s forwards;
+}
+::view-transition-new(root) {
+  animation: slide-in-from-right 0.8s forwards;
+}
+@keyframes slide-out-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
@@ -922,4 +953,4 @@ ul li {
       --tw-ring-offset-shadow: 0 0 #0000;
     }
   }
-} 
+}

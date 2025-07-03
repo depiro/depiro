@@ -448,4 +448,36 @@ ul li {
   margin-bottom: 1.2rem;
 }
 
+@view-transition {
+  navigation: auto;
+}
+::view-transition-group(*) {
+  animation-duration: 0.1s;
+}
+
+::view-transition-old(root) {
+  animation: slide-out-to-left 0.8s forwards;
+}
+
+::view-transition-new(root) {
+  animation: slide-in-from-right 0.8s forwards;
+}
+
+@keyframes slide-out-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 /*# sourceMappingURL=custom.css.map */
