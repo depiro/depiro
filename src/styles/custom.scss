@@ -8,7 +8,10 @@
     --color-2: color(display-p3 0.092 0.106 0.316);
     --color-text: var(--color-2);
     --color-bg: var(--color-1);   */
-    --color-text:var(--color-flexoki-light-tx);
+    
+    --color-2: color(display-p3 0.092 0.106 0.316);
+    --color-text: var(--color-2);
+    /* --color-text:var(--color-flexoki-light-tx); */
     --color-bg: var(--color-flexoki-light-bg);
     --max-width: 720px;
     --color-muted-text:var(--color-flexoki-cyan-600);
