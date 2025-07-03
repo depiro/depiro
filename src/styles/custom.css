@@ -397,24 +397,23 @@ body {
 }
 
 .contact-home {
-  /* color: var(--color-flexoki-cyan-200); */
-  color: var(--color-bg);
-  /* background-color: var(--color-text); */
-  background-color: var(--color-flexoki-cyan-400);
-  padding: 0.5rem 2rem;
+  /* color: var(--color-bg);  */
+  /* background-color:  var(--color-flexoki-cyan-400); */
+  padding: 0.35rem 0.9rem;
   display: inline-block;
   border-radius: 50px;
   text-align: center;
   transition: 0.5s;
-  background-size: 160% auto;
-  /* box-shadow: 0 0 20px #eee;     */
-  /* background-image: linear-gradient(45deg, var(--color-flexoki-cyan-400) 10%, var(--color-flexoki-cyan-700) 90%); */
-  background-image: linear-gradient(45deg, var(--color-flexoki-cyan-500) 20%, var(--color-text) 90%);
+  /* background-size: 160% auto; */
+  background-color: transparent;
+  /* background-image: linear-gradient(45deg, var(--color-flexoki-cyan-500) 20%, var(--color-text) 90%); */
+  border: 2px solid var(--color-flexoki-cyan-500);
+  color: var(--color-flexoki-cyan-500);
 }
 
 .contact-home:hover {
   background-size: 230% auto;
-  background-image: linear-gradient(45deg, var(--color-flexoki-cyan-500) 20%, var(--color-flexoki-cyan-900) 90%);
+  /* background-image: linear-gradient(45deg, var(--color-flexoki-cyan-500) 20%, var(--color-flexoki-cyan-900) 90%); */
   color: var(--color-bg);
   text-decoration: none;
 }
