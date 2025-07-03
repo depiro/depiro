@@ -60,6 +60,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Figtree:opsz,wght@14,300..900&family=Fira+Code:wght@300..700&display=swap" 
   rel="stylesheet">
   <link rel="stylesheet" href="dist/styles/main.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body class="px-8 md:px-12 lg:px-8">
@@ -85,12 +86,20 @@
     </main>
     
     <footer role="contentinfo" class="text-center items-center py-4">
-      <p class="text-base mb-2">© 2025 Depiro • 
-       <a href="mailto:hello@depi.ro" class="no-underline">Email</a>  • 
-       <a href="https://linkedin.com/in/diegorodriguezpinedo/" class="no-underline" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-     </p>
+      <p class="text-base mb-2 flex flex-wrap items-center justify-center gap-2 px-4 text-center">© 2025 Depiro • 
+        <a href="mailto:hello@depi.ro" class="no-underline flex items-center gap-1">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+         Email</a>  • 
+
+        <a href="https://linkedin.com/in/diegorodriguezpinedo/" class="no-underline flex items-center gap-1" target="_blank" rel="noopener noreferrer">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+         LinkedIn</a>
+      </p>
       <p class="text-sm fira-code-secondary disclaimer">Este sitio web está diseñado como se concibió internet, es un sitio web simple, centrado en el contenido, que ofrece servicios y comparte ideas. El contenido primero.</p>
     </footer>
   </div>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

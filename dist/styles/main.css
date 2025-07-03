@@ -255,6 +255,12 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .space-y-8 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -863,20 +869,20 @@ ul li {
   navigation: auto;
 }
 ::view-transition-group(*) {
-  animation-duration: 0.1s;
+  animation-duration: 0.5s;
 }
 ::view-transition-old(root) {
-  animation: slide-out-to-left 0.8s forwards;
+  animation: slide-out-to-left 0.5s forwards;
 }
 ::view-transition-new(root) {
-  animation: slide-in-from-right 0.8s forwards;
+  animation: slide-in-from-right 0.5s forwards;
 }
 @keyframes slide-out-to-left {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100px);
+    transform: translateX(-500px);
   }
 }
 @keyframes slide-in-from-right {

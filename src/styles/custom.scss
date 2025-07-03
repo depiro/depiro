@@ -121,13 +121,13 @@ ul {
   navigation: auto;
 }
 ::view-transition-group(*) {
-  animation-duration: .1s;
+  animation-duration: .5s;
 }
 ::view-transition-old(root) {
-  animation: slide-out-to-left .8s forwards;
+  animation: slide-out-to-left .5s forwards;
 }
 ::view-transition-new(root) {
-  animation: slide-in-from-right .8s forwards;
+  animation: slide-in-from-right .5s forwards;
 }
 
 @keyframes slide-out-to-left {
@@ -135,7 +135,7 @@ ul {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100px);
+    transform: translateX(-500px);
   }
 }
 
