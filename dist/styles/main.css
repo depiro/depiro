@@ -547,7 +547,9 @@ h4 {
 }
 p, ol, ul {
   font-size: clamp(1rem, 1.5vw, 1.25rem);
-  line-height: 1.75rem;
+  margin-block: 1em;
+  margin-block: 1lh;
+  margin-top: 0;
 }
 small {
   font-size: clamp(0.8rem, 1vw, 1rem);
@@ -855,7 +857,6 @@ header, footer {
 }
 p, ul, ol {
   color: var(--color-flexoki-light-tx-1);
-  margin-bottom: 1.8rem;
 }
 ul {
   list-style: disc;
