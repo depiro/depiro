@@ -1,78 +1,48 @@
-# Depiro - Portfolio Personal
+# Diego Rodríguez Pinedo — Product & UX/UI Designer
 
-Portfolio personal desarrollado con tecnologías modernas para mostrar proyectos y experiencia profesional.
+Bienvenido a mi perfil. Soy **Diseñador de Producto especializado en UX/UI**, con más de 10 años de experiencia en diseño de experiencias digitales accesibles, funcionales y escalables.
 
-## 🛠️ Stack Tecnológico
+Trabajo con una fuerte orientación a la **investigación de usuarios**, la estrategia de producto y la implementación técnica en HTML, CSS y React. Combino diseño e ingeniería para reducir la fricción entre ideas y entregables, conectando equipos de diseño, desarrollo y negocio.
 
-- **HTML5** - Estructura semántica
-- **Tailwind CSS v4** - Framework de utilidades CSS
-- **Sass/SCSS** - Preprocesador CSS para estilos personalizados
-- **PostCSS** - Procesamiento y optimización de CSS
-- **Node.js** - Entorno de desarrollo y build tools
+---
 
-## 📁 Organización del Proyecto
+## 💼 Áreas de especialización
 
-```
-depiro/
-├── src/
-│   └── styles/
-│       ├── main.css          # Archivo principal de Tailwind CSS
-│       └── custom.scss       # Estilos personalizados en Sass
-├── dist/
-│   └── styles/
-│       └── main.css          # CSS compilado y optimizado
-├── index.html               # Página principal
-├── package.json             # Dependencias y scripts
-└── postcss.config.js        # Configuración de PostCSS
-```
+- **UX Research & Product Strategy**  
+  Entrevistas, pruebas de usabilidad, análisis de métricas, definición de oportunidades.
 
-## 🎨 Organización del CSS
+- **Diseño de Interacción y Sistemas**  
+  Arquitectura de la información, wireframes, prototipos, design systems escalables.
 
-### Tailwind CSS (main.css)
-- Utiliza las directivas estándar de Tailwind: `@tailwind base`, `@tailwind components`, `@tailwind utilities`
-- Importa automáticamente los estilos personalizados compilados desde Sass
+- **Accesibilidad & Diseño Inclusivo**  
+  Cumplimiento de WCAG 2.2, testing con usuarios reales, semántica y contraste.
 
-### Sass/SCSS (custom.scss)
-- **Variables CSS personalizadas** - Fuentes, colores, dimensiones
-- **Estilos base** - Reset, tipografía, layout
-- **Componentes personalizados** - Clases utilitarias específicas del proyecto
-- **Responsive design** - Media queries y breakpoints
+- **Front-end semántico y accesible**  
+  Desarrollo de interfaces en HTML5, Tailwind CSS, Sass y React. Foco en performance y mantenibilidad.
 
-## 🚀 Comandos de Desarrollo
+---
 
-```bash
-# Instalar dependencias
-npm install
+## 🛠️ Stack de trabajo
 
-# Compilar para producción
-npm run build
+`Figma` · `FigJam` · `Tailwind CSS v4` · `Sass/SCSS` · `HTML5` · `React` · `Node.js`  
+`PostCSS` · `Git & GitHub` · `Google Analytics 4` · `Mixpanel` · `Notion` · `Markdown`
 
-# Modo desarrollo con watch
-npm run dev
+---
 
-# Comandos individuales
-npm run build:sass    # Compilar solo Sass
-npm run build:css     # Procesar solo Tailwind/PostCSS
-npm run dev:sass      # Watch solo Sass
-npm run dev:css       # Watch solo CSS
-```
+## 🌍 Intereses complementarios
 
-## 📝 Flujo de Trabajo
+- Proyectos con impacto social, accesibilidad digital y sostenibilidad.  
+- Aplicación de inteligencia artificial y ciencia de datos en el diseño de productos.  
+- Participación en comunidades open source y trabajo colaborativo en equipos distribuidos.
 
-1. **Desarrollo**: Escribe estilos personalizados en `src/styles/custom.scss`
-2. **Compilación**: Sass se compila a CSS y se importa en el archivo principal de Tailwind
-3. **Procesamiento**: PostCSS aplica Tailwind y optimizaciones (autoprefixer, etc.)
-4. **Resultado**: CSS final optimizado en `dist/styles/main.css`
+---
 
-## 🎯 Características
+## 📫 Contacto
 
-- ✅ Compilación automática de Sass a CSS
-- ✅ Integración moderna con Tailwind CSS v4
-- ✅ Optimización automática con PostCSS
-- ✅ Autoprefixer para compatibilidad entre navegadores
-- ✅ Modo watch para desarrollo en tiempo real
-- ✅ Estructura modular y mantenible
+- **Sitio web / portfolio:** [depiro.design](https://depiro.design)  
+- **LinkedIn:** [linkedin.com/in/diegorodriguezpinedo](https://www.linkedin.com/in/diegorodriguezpinedo)  
+- **Email:** hello@depiro.design  
 
-## 📞 Contacto
+---
 
-Para más información sobre el proyecto o colaboraciones, no dudes en contactarme.
+Gracias por visitar mi perfil. Si estás buscando a alguien que combine diseño, investigación y visión técnica, estaré encantado de conversar.
