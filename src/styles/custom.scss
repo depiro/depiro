@@ -46,11 +46,19 @@ body {
    text-decoration: none;
  }
 
- 
 // Custom utility classes
 .text-gradient {
   background: linear-gradient(45deg, var(--color-flexoki-cyan-400) 10%, var(--color-flexoki-cyan-700) 90%);
+  /* background: #1F51FF; */
+  /* background: linear-gradient(
+    to right,
+    #373B44,#4286f4
+  ); */
+  /* background: linear-gradient(2deg, #0b235b 2%, #2554c1 28%, #0fb7ff 80%); */
+  /* background: linear-gradient(0deg,#81a1ec 10%, #0c5cdc 90%); */
   -webkit-background-clip: text;
+  /* background: linear-gradient(135deg, #c4fcc3, #b88fd2, #a3f7a3); */
+  /* background: linear-gradient(135deg, #0c2ed9, #345fdf, #0039ab); */
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }

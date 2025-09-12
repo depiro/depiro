@@ -213,6 +213,9 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
@@ -221,9 +224,6 @@
   }
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
-  }
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
   }
   .block {
     display: block;
@@ -299,9 +299,6 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .px-8 {
-    padding-inline: calc(var(--spacing) * 8);
-  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
@@ -353,9 +350,6 @@
   .text-balance {
     text-wrap: balance;
   }
-  .whitespace-nowrap {
-    white-space: nowrap;
-  }
   .text-gray-900 {
     color: var(--color-gray-900);
   }
@@ -364,9 +358,6 @@
   }
   .no-underline {
     text-decoration-line: none;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -458,6 +449,8 @@
   }
 }
 @layer base;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Code:wght@300..700&display=swap");
 :root {
   --font-sans: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-mono: "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
@@ -469,11 +462,11 @@
   font-family: var(--font-mono);
 }
 .text-xs {
-  font-size: .64rem;
+  font-size: 0.64rem;
   line-height: 1rem;
 }
 .text-sm {
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 1.25rem;
 }
 .text-base {
@@ -508,53 +501,53 @@ body {
   font-family: var(--font-sans);
   font-weight: 500;
   line-height: 1.65;
-  letter-spacing: .005em;
+  letter-spacing: 0.005em;
   -webkit-font-smoothing: antialiased;
 }
 .figtree-primary {
-  font-family: "Figtree",sans-serif;
+  font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 .fira-code-secondary {
-  font-family: "Fira Code",monospace;
+  font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
   font-style: normal;
 }
 h1 {
-  font-size: clamp(2.441rem,5vw,3.815rem);
+  font-size: clamp(2.441rem, 5vw, 3.815rem);
   letter-spacing: -0.02em;
   font-weight: 700;
 }
 h2 {
-  font-size: clamp(1.953rem,4vw,3.052rem);
+  font-size: clamp(1.953rem, 4vw, 3.052rem);
   line-height: 2.75rem;
   letter-spacing: -0.015em;
   font-weight: 700;
 }
 h3 {
-  font-size: clamp(1.563rem,3vw,2.441rem);
+  font-size: clamp(1.563rem, 3vw, 2.441rem);
   letter-spacing: -0.01em;
   line-height: 2.5rem;
   font-weight: 700;
 }
 h4 {
-  font-size: clamp(1.25rem,2vw,1.953rem);
+  font-size: clamp(1.25rem, 2vw, 1.953rem);
   line-height: 2.25rem;
   font-weight: 600;
 }
-p,ol,ul {
-  font-size: clamp(1rem,1.5vw,1.25rem);
+p, ol, ul {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   margin-block: 1em;
   margin-block: 1lh;
   margin-top: 0;
 }
 small {
-  font-size: clamp(.8rem,1vw,1rem);
+  font-size: clamp(0.8rem, 1vw, 1rem);
   line-height: 1.5rem;
 }
-.caption,.note {
-  font-size: clamp(.64rem,.8vw,.8rem);
+.caption, .note {
+  font-size: clamp(0.64rem, 0.8vw, 0.8rem);
   line-height: 1.25rem;
 }
 :root {
@@ -743,14 +736,14 @@ small {
 a {
   color: var(--color-flexoki-cyan-700);
   text-decoration-thickness: 1px;
-  text-underline-offset: .15em;
+  text-underline-offset: 0.15em;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 1px;
-  transition: color .25s ease-in-out,background-size .25s ease-out,outline-offset .2s ease-out;
+  transition: color 0.25s ease-in-out, background-size 0.25s ease-out, outline-offset 0.2s ease-out;
 }
-a:hover,a:active {
+a:hover, a:active {
   color: var(--color-flexoki-cyan-600);
   background-size: 100% 1px;
 }
@@ -775,7 +768,7 @@ p a {
 }
 nav a {
   margin-right: 1rem;
-  padding-block: .25rem;
+  padding-block: 0.25rem;
   font-weight: 600;
 }
 nav a[aria-current=page] {
@@ -809,15 +802,15 @@ body {
   margin: 0 auto;
 }
 .cta p {
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 .contact-home {
-  padding: .35rem .9rem;
+  padding: 0.35rem 0.9rem;
   display: inline-block;
   border-radius: 50px;
   text-align: center;
-  transition: .5s;
-  background-color: rgba(0,0,0,0);
+  transition: 0.5s;
+  background-color: transparent;
   border: 2px solid var(--color-flexoki-cyan-500);
   color: var(--color-flexoki-cyan-500);
 }
@@ -830,7 +823,7 @@ body {
 .text-gradient {
   background: linear-gradient(45deg, var(--color-flexoki-cyan-400) 10%, var(--color-flexoki-cyan-700) 90%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(0,0,0,0);
+  -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 .site-layout {
@@ -838,22 +831,22 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
 }
-.site-layout>header {
+.site-layout > header {
   grid-area: header;
 }
-.site-layout>main {
+.site-layout > main {
   grid-area: main;
 }
-.site-layout>footer {
+.site-layout > footer {
   grid-area: footer;
 }
-header,footer {
+header, footer {
   padding: 1rem 0;
 }
 .disclaimer {
   color: var(--color-flexoki-cyan-700);
 }
-p,ul,ol {
+p, ul, ol {
   color: var(--color-flexoki-light-tx-1);
 }
 ul {
@@ -868,13 +861,13 @@ ul li {
   navigation: auto;
 }
 ::view-transition-group(*) {
-  animation-duration: .5s;
+  animation-duration: 0.5s;
 }
 ::view-transition-old(root) {
-  animation: slide-out-to-left .5s forwards;
+  animation: slide-out-to-left 0.5s forwards;
 }
 ::view-transition-new(root) {
-  animation: slide-in-from-right .5s forwards;
+  animation: slide-in-from-right 0.5s forwards;
 }
 @keyframes slide-out-to-left {
   from {
@@ -999,4 +992,3 @@ ul li {
     }
   }
 }
-/*# sourceMappingURL=main.css.map */
