@@ -1,8 +1,7 @@
 # Diego Rodríguez Pinedo — Product & UX/UI Designer
+Soy un **Diseñador de Producto especializado en UX/UI**, con más de 10 años de experiencia en diseño de experiencias digitales accesibles, funcionales y escalables.
 
-Bienvenido a mi perfil. Soy **Diseñador de Producto especializado en UX/UI**, con más de 10 años de experiencia en diseño de experiencias digitales accesibles, funcionales y escalables.
-
-Trabajo con una fuerte orientación a la **investigación de usuarios**, la estrategia de producto y la implementación técnica en HTML, CSS y React. Combino diseño e ingeniería para reducir la fricción entre ideas y entregables, conectando equipos de diseño, desarrollo y negocio.
+Trabajo orientado a la **investigación de usuarios**, estrategia de producto e implementación técnica en HTML, CSS y React. Conecto equipos de diseño, desarrollo y negocio para reducir la fricción entre ideas y entregables.
 
 ---
 
@@ -24,8 +23,8 @@ Trabajo con una fuerte orientación a la **investigación de usuarios**, la estr
 
 ## 🛠️ Stack de trabajo
 
-`Figma` · `FigJam` · `Tailwind CSS v4` · `Sass/SCSS` · `HTML5` · `React` · `Node.js`  
-`PostCSS` · `Git & GitHub` · `Google Analytics 4` · `Mixpanel` · `Notion` · `Markdown`
+`Figma` · `FigJam` · `Tailwind CSS` · `Sass/SCSS` · `HTML5` · `React` ·
+`PostCSS` · `Git`
 
 ---
 
@@ -45,4 +44,4 @@ Trabajo con una fuerte orientación a la **investigación de usuarios**, la estr
 
 ---
 
-Gracias por visitar mi perfil. Si estás buscando a alguien que combine diseño, investigación y visión técnica, estaré encantado de conversar.
+Si estás buscando a alguien que combine diseño, investigación y visión técnica, estaré encantado de conversar.
